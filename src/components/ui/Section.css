@@ -1,0 +1,60 @@
+.sw-section {
+  width: 100%;
+  position: relative;
+}
+
+.sw-section--default {
+  background-color: var(--color-bg);
+}
+
+.sw-section--subtle {
+  background-color: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-section--surface {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-section--primary-muted {
+  background-color: var(--color-primary-muted);
+}
+
+.sw-section--spacing-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sw-section--spacing-sm {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.sw-section--spacing-md {
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+}
+
+.sw-section--spacing-lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.sw-section--spacing-xl {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+@media (max-width: 640px) {
+  .sw-section--spacing-lg {
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-10);
+  }
+  .sw-section--spacing-xl {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+}

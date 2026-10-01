@@ -1,0 +1,54 @@
+.sw-card {
+  background-color: var(--color-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  overflow: hidden;
+}
+
+.sw-card--default {
+  box-shadow: var(--shadow-sm);
+}
+
+.sw-card--subtle {
+  background-color: var(--color-bg-subtle);
+  box-shadow: none;
+}
+
+.sw-card--interactive {
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.sw-card--interactive:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.sw-card--highlight {
+  border-color: var(--color-primary-light);
+  background: linear-gradient(180deg, var(--color-primary-muted) 0%, var(--color-surface) 100%);
+  box-shadow: var(--shadow-sm);
+}
+
+.sw-card--pad-none {
+  padding: 0;
+}
+
+.sw-card--pad-sm {
+  padding: var(--space-3);
+}
+
+.sw-card--pad-md {
+  padding: var(--space-5);
+}
+
+.sw-card--pad-lg {
+  padding: var(--space-8);
+}
+
+@media (max-width: 640px) {
+  .sw-card--pad-lg {
+    padding: var(--space-5);
+  }
+}

@@ -1,0 +1,143 @@
+.sw-health-metric-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: all var(--duration-fast) var(--ease-default);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.sw-health-metric-card--interactive {
+  cursor: pointer;
+}
+
+.sw-health-metric-card--interactive:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.sw-health-metric-card--interactive:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.sw-health-metric-card--normal {
+  border-top: 3px solid var(--color-success);
+}
+
+.sw-health-metric-card--warning {
+  border-top: 3px solid var(--color-warning);
+}
+
+.sw-health-metric-card--critical {
+  border-top: 3px solid var(--color-emergency);
+}
+
+.sw-health-metric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.sw-health-metric-label-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sw-health-metric-icon {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sw-health-metric-title {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-secondary);
+}
+
+.sw-health-metric-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.sw-health-metric-value-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+}
+
+.sw-health-metric-value {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.sw-health-metric-unit {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  font-weight: var(--fw-medium);
+}
+
+.sw-metric-trend,
+.sw-health-metric-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.sw-metric-trend--improving {
+  color: var(--color-success);
+  background-color: var(--color-success-subtle);
+}
+
+.sw-metric-trend--declining {
+  color: var(--color-warning);
+  background-color: var(--color-warning-subtle);
+}
+
+.sw-metric-trend--stable {
+  color: var(--color-text-tertiary);
+  background-color: var(--color-bg-subtle);
+}
+
+.sw-health-metric-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  padding-top: var(--space-2);
+  border-top: 1px dashed var(--color-border-subtle);
+  gap: var(--space-2);
+}
+
+.sw-health-metric-time {
+  white-space: nowrap;
+}
+
+.sw-health-metric-note {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}

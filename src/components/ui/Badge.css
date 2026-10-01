@@ -1,0 +1,72 @@
+.sw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: var(--fw-medium);
+  line-height: var(--leading-none);
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.sw-badge--sm {
+  padding: 2px 8px;
+  font-size: var(--text-xs);
+}
+
+.sw-badge--md {
+  padding: 4px 10px;
+  font-size: var(--text-xs);
+}
+
+.sw-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: currentColor;
+}
+
+/* Status Variants */
+.sw-badge--default {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  border-color: var(--color-border-subtle);
+}
+
+.sw-badge--primary {
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary-dark);
+  border-color: #c0ded8;
+}
+
+.sw-badge--secondary {
+  background-color: var(--color-secondary-muted);
+  color: var(--color-secondary);
+  border-color: #fde68a;
+}
+
+.sw-badge--normal {
+  background-color: var(--color-health-normal-muted);
+  color: var(--color-health-normal);
+  border-color: #c6ebd2;
+}
+
+.sw-badge--warning {
+  background-color: var(--color-health-warning-muted);
+  color: var(--color-health-warning);
+  border-color: #fed7aa;
+}
+
+.sw-badge--critical {
+  background-color: var(--color-health-critical-muted);
+  color: var(--color-health-critical);
+  border-color: #fbcfe8;
+}
+
+.sw-badge--emergency {
+  background-color: var(--color-emergency-muted);
+  color: var(--color-emergency);
+  border-color: #fecaca;
+  font-weight: var(--fw-semibold);
+}

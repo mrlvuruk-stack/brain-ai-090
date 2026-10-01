@@ -1,0 +1,151 @@
+/**
+ * SWASTHYAAI DESIGN SYSTEM TOKENS
+ * Calm, Clinical, Human, Intelligent, Trustworthy, Premium
+ */
+
+:root {
+  /* ==================================================
+     1. COLOR PALETTE
+     ================================================== */
+  --color-bg: #FAF9F6;
+  --color-bg-subtle: #F3EFEA;
+  --color-surface: #FFFFFF;
+  --color-bg-surface: #FFFFFF;
+
+  /* Primary Brand (Deep clinical pine/emerald) */
+  --color-primary: #0E6251;
+  --color-primary-light: #1B7A66;
+  --color-primary-dark: #084B3E;
+  --color-primary-muted: #E8F3F1;
+
+  /* Secondary Accent (Warm Ayurvedic amber) */
+  --color-secondary: #B45309;
+  --color-secondary-light: #D97706;
+  --color-secondary-muted: #FEF3C7;
+
+  /* Typography Colors */
+  --color-text-primary: #18201E;
+  --color-text-secondary: #4A5568;
+  --color-text-tertiary: #718096;
+  --color-inverse: #FFFFFF;
+
+  /* Structural Borders */
+  --color-border-subtle: #E6E1DA;
+  --color-border-medium: #CBD5E0;
+
+  /* Interactive States */
+  --color-focus: #0E6251;
+  --color-focus-ring: rgba(14, 98, 81, 0.35);
+
+  /* Health & Clinical Indicators */
+  --color-health-normal: #1B7A43;
+  --color-health-normal-muted: #E8F7EE;
+  --color-health-warning: #C05621;
+  --color-health-warning-muted: #FDF2E9;
+  --color-health-critical: #9E2A2B;
+  --color-health-critical-muted: #FBEBEB;
+  --color-emergency: #C1121F;
+  --color-emergency-muted: #FDE8E8;
+
+  /* ==================================================
+     2. TYPOGRAPHY SYSTEM
+     ================================================== */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-devanagari: 'Noto Sans Devanagari', 'Inter', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+
+  /* ==================================================
+     3. SPACING SCALE
+     ================================================== */
+  --space-0-5: 0.125rem;  /* 2px */
+  --space-1: 0.25rem;     /* 4px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+  --space-20: 5rem;       /* 80px */
+  --space-24: 6rem;       /* 96px */
+
+  /* Minimum Accessible Touch Target (WCAG 2.2) */
+  --min-touch-target: 48px;
+
+  /* ==================================================
+     4. RADIUS SCALE
+     ================================================== */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ==================================================
+     5. ELEVATION / SHADOWS (Restrained & Calm)
+     ================================================== */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px 0 rgba(24, 32, 30, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(24, 32, 30, 0.06), 0 2px 4px -2px rgba(24, 32, 30, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(24, 32, 30, 0.07), 0 4px 6px -4px rgba(24, 32, 30, 0.03);
+
+  /* ==================================================
+     6. BORDERS
+     ================================================== */
+  --border-subtle: 1px solid var(--color-border-subtle);
+  --border-medium: 1px solid var(--color-border-medium);
+  --border-primary: 1px solid var(--color-primary);
+
+  /* ==================================================
+     7. TRANSITIONS
+     ================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ==================================================
+     8. LAYOUT & BREAKPOINTS
+     ================================================== */
+  --max-width-sm: 640px;
+  --max-width-md: 768px;
+  --max-width-lg: 1024px;
+  --max-width-xl: 1200px;
+  --max-width-2xl: 1360px;
+
+  /* ==================================================
+     9. Z-INDEX SYSTEM
+     ================================================== */
+  --z-base: 1;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-overlay: 1200;
+  --z-modal: 1300;
+  --z-toast: 1400;
+}

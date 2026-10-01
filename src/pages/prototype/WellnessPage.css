@@ -1,0 +1,192 @@
+.sw-wellness-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.sw-wellness-tabs {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: var(--space-2);
+}
+
+.sw-wellness-tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.sw-wellness-tab-btn:hover {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+}
+
+.sw-wellness-tab-btn--active {
+  background-color: var(--color-primary-muted);
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+  font-weight: var(--fw-bold);
+}
+
+/* Grid */
+.sw-wellness-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--space-5);
+}
+
+.sw-wellness-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.sw-wellness-card--completed {
+  border-left: 4px solid var(--color-success);
+  background-color: rgba(22, 163, 107, 0.02);
+}
+
+.sw-wellness-card-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1-5);
+}
+
+.sw-wellness-card-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.sw-wellness-cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  background-color: var(--color-primary-muted);
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+}
+
+.sw-wellness-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.sw-wellness-title {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.sw-wellness-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sw-wellness-section-label {
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+}
+
+.sw-wellness-purpose-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+.sw-wellness-activity-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-primary);
+  font-weight: var(--fw-medium);
+  margin: 0;
+}
+
+.sw-wellness-desc-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.sw-wellness-ayur-box {
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-2-5);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sw-ayur-tag {
+  font-size: 10px;
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.sw-ayur-val {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.sw-wellness-safety-box {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  background-color: rgba(245, 158, 11, 0.06);
+  border: 1px dashed rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-2-5);
+}
+
+.sw-safety-icon {
+  color: var(--color-warning);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.sw-safety-text {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: var(--leading-snug);
+}
+
+.sw-safety-text strong {
+  color: var(--color-text-primary);
+  margin-right: 4px;
+}
+
+.sw-wellness-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-3);
+  margin-top: auto;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.sw-wellness-suitability {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}

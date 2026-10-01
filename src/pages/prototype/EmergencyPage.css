@@ -1,0 +1,289 @@
+.sw-emergency-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* Boundary Strip */
+.sw-emg-boundary-strip {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background-color: rgba(220, 38, 38, 0.05);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-left: 4px solid var(--color-emergency);
+  border-radius: var(--radius-md);
+  padding: var(--space-3-5) var(--space-4);
+}
+
+.sw-emg-boundary-icon {
+  color: var(--color-emergency);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sw-emg-boundary-text strong {
+  font-size: var(--text-sm);
+  color: var(--color-emergency);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.sw-emg-boundary-text p {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+/* Critical Medical ID Card */
+.sw-emg-id-card {
+  border: 2px solid var(--color-emergency);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.sw-emg-id-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-emg-id-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sw-emg-blood-pill {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-emergency);
+  color: white;
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sw-emg-id-name {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.sw-emg-id-meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  display: block;
+  margin-top: 2px;
+}
+
+/* Triage Grid */
+.sw-emg-triage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+
+.sw-emg-triage-box {
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sw-emg-triage-box--allergy {
+  border-left: 3px solid var(--color-emergency);
+  background-color: rgba(220, 38, 38, 0.03);
+}
+
+.sw-triage-label {
+  font-size: 11px;
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-secondary);
+}
+
+.sw-triage-val {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+}
+
+.sw-triage-sub {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+/* Active Meds Box */
+.sw-emg-meds-box {
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-emg-meds-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-text-primary);
+}
+
+.sw-emg-meds-list {
+  margin: 0;
+  padding-left: var(--space-5);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Contacts & Readiness Duo Grid */
+.sw-emg-duo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.sw-emg-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-5);
+}
+
+.sw-emg-contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2-5) var(--space-3);
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.sw-emg-contact-name {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.sw-emg-contact-rel {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.sw-emg-contact-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+}
+
+/* Checklist */
+.sw-emg-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-5);
+}
+
+.sw-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2-5);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.sw-check-icon {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+/* Simulation Modal Specifics */
+.sw-emg-sim-modal {
+  border-top: 4px solid var(--color-emergency);
+}
+
+.sw-emg-modal-header strong {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+}
+
+.sw-emg-modal-disclaimer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--color-warning-subtle);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-2-5) var(--space-3);
+  font-size: 11px;
+  color: var(--color-warning-dark, #92400e);
+}
+
+.sw-emg-packet-box {
+  background-color: #0f172a;
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-emg-packet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sw-packet-title {
+  font-size: 10px;
+  font-weight: var(--fw-bold);
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.sw-packet-copy-btn {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sw-packet-copy-btn:hover {
+  background: #1e293b;
+}
+
+.sw-emg-packet-pre {
+  margin: 0;
+  font-family: monospace;
+  font-size: 11px;
+  color: #38bdf8;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}

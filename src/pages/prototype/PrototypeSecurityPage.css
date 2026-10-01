@@ -1,0 +1,194 @@
+.sw-proto-security-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.sw-proto-sec-grid {
+  display: grid;
+  grid-templateColumns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.sw-proto-sec-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-proto-sec-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sw-proto-sec-icon-wrap--primary {
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary);
+}
+
+.sw-proto-sec-icon-wrap--success {
+  background-color: var(--color-success-subtle);
+  color: var(--color-success);
+}
+
+.sw-proto-sec-icon-wrap--accent {
+  background-color: var(--color-secondary-muted);
+  color: var(--color-secondary);
+}
+
+.sw-proto-sec-sub {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+.sw-proto-sec-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.sw-proto-sec-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+}
+
+.sw-proto-sec-label {
+  color: var(--color-text-secondary);
+}
+
+.sw-proto-sec-val {
+  font-weight: var(--fw-medium);
+  color: var(--color-text-primary);
+}
+
+.sw-proto-sec-val--secure {
+  color: var(--color-success);
+  font-weight: var(--fw-semibold);
+}
+
+.sw-proto-sec-family-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.sw-proto-sec-family-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2-5) var(--space-3);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.sw-proto-sec-family-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.sw-proto-sec-family-rel {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  background: var(--color-bg-subtle);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.sw-proto-sec-family-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sw-proto-sec-family-scopes {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.sw-proto-sec-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.sw-proto-sec-log-table {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-proto-sec-log-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.sw-proto-sec-log-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sw-proto-sec-log-action {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.sw-proto-sec-log-detail {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.sw-proto-sec-log-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sw-proto-sec-log-time {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+.sw-proto-sec-footer-banner {
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.sw-proto-sec-footer-banner p {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  margin: 2px 0 0 0;
+}

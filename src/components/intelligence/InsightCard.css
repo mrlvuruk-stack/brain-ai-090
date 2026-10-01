@@ -1,0 +1,253 @@
+.sw-insight-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.sw-insight-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.sw-insight-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sw-insight-card__badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.sw-insight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.sw-insight-badge--category {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+.sw-insight-badge__icon {
+  display: flex;
+  align-items: center;
+}
+
+.sw-insight-badge--relevance {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.sw-insight-badge--recent {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #dbeafe;
+}
+
+.sw-insight-badge--contextual {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border-color: #dcfce7;
+}
+
+.sw-insight-badge--review {
+  background-color: #fffbeb;
+  color: #b45309;
+  border-color: #fef3c7;
+}
+
+.sw-insight-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sw-insight-card__date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.sw-insight-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.sw-insight-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.sw-insight-section {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f3f4f6;
+  background-color: #fafafa;
+}
+
+.sw-insight-section--obs {
+  background-color: #fcfdfd;
+  border-color: #f0fdfa;
+}
+
+.sw-insight-section--int {
+  background-color: #fbfbfe;
+  border-color: #eff6ff;
+}
+
+.sw-insight-section--edu {
+  background-color: #fffdf9;
+  border-color: #fefce8;
+}
+
+.sw-insight-section__tag {
+  margin-bottom: 0.25rem;
+}
+
+.sw-nature-tag {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+}
+
+.sw-nature-tag--observation {
+  background-color: #ccfbf1;
+  color: #0f766e;
+}
+
+.sw-nature-tag--interpretation {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.sw-nature-tag--education {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.sw-insight-section__text {
+  font-size: 0.8125rem;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sw-insight-card__coverage {
+  display: flex;
+  align-items: center;
+}
+
+.sw-coverage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #4b5563;
+  background-color: #f3f4f6;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #e5e7eb;
+}
+
+.sw-insight-card__sources {
+  padding-top: 0.25rem;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.sw-insight-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.sw-insight-explain-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0d9488;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.375rem;
+  border-radius: 0.375rem;
+  transition: all 0.15s ease;
+}
+
+.sw-insight-explain-btn:hover {
+  background-color: #f0fdfa;
+  color: #0f766e;
+}
+
+.sw-insight-explain-btn:focus-visible {
+  outline: 2px solid #0d9488;
+}
+
+.sw-insight-card__review-note {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.6875rem;
+  color: #b45309;
+  background-color: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  line-height: 1.4;
+}
+
+/* Senior Mode */
+body.sw-elderly-mode .sw-insight-card {
+  padding: 1.5rem;
+  gap: 1.125rem;
+}
+
+body.sw-elderly-mode .sw-insight-card__title {
+  font-size: 1.25rem;
+}
+
+body.sw-elderly-mode .sw-insight-section__text {
+  font-size: 1rem;
+}
+
+body.sw-elderly-mode .sw-insight-explain-btn {
+  font-size: 0.9375rem;
+  min-height: 48px;
+  padding: 0.5rem 0.75rem;
+}

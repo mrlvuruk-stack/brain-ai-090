@@ -1,0 +1,437 @@
+/* ==========================================================================
+   HEALTH PROFILE & PREFERENCES STYLES — PHASE 4
+   ========================================================================== */
+
+.sw-profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+}
+
+/* Header */
+.sw-profile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-profile-header__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.sw-profile-header__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2-5);
+  flex-wrap: wrap;
+}
+
+.sw-profile-badge-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sw-profile-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.sw-profile-boundary-tag {
+  font-size: 10px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.sw-profile-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 680px;
+  line-height: var(--leading-relaxed);
+}
+
+.sw-profile-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Base Card Style */
+.sw-profile-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.sw-profile-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.sw-profile-card__subnote {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+/* 1. Identity Grid */
+.sw-profile-identity-grid {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.sw-profile-avatar-large {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: white;
+  font-size: var(--text-xl);
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(14, 98, 81, 0.15);
+}
+
+.sw-profile-identity-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-profile-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.sw-profile-display-name {
+  font-size: var(--text-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-primary);
+}
+
+.sw-profile-ehr-tag {
+  font-size: 11px;
+  font-family: monospace;
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.sw-profile-bio {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.sw-profile-tags-row {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.sw-profile-mini-tag {
+  font-size: 11px;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 3px 10px;
+  color: var(--color-text-secondary);
+}
+
+.sw-profile-mini-tag strong {
+  color: var(--color-text-primary);
+}
+
+/* 2. Health Context Grid */
+.sw-profile-context-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+.sw-profile-subcol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-5);
+}
+
+.sw-profile-subcol-title {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-bold);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sw-profile-cond-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-profile-cond-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2-5);
+  background-color: var(--color-bg-page);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.sw-profile-cond-item--warning {
+  border-left: 3px solid var(--color-warning);
+}
+
+.sw-profile-cond-item--normal {
+  border-left: 3px solid var(--color-primary);
+}
+
+.sw-cond-icon--warning {
+  color: var(--color-warning);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sw-cond-icon--normal {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sw-cond-name {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.sw-cond-note {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin: 2px 0 0;
+  line-height: var(--leading-snug);
+}
+
+.sw-wellness-chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.sw-wellness-interest-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-muted);
+  border: 1px solid rgba(14, 98, 81, 0.15);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.sw-profile-subcol-desc {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin: 0;
+  line-height: var(--leading-normal);
+}
+
+/* 3. Preferences Grid */
+.sw-profile-prefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+.sw-pref-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  background-color: var(--color-bg-page);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3-5);
+  flex-wrap: wrap;
+}
+
+.sw-pref-tile__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.sw-pref-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.sw-pref-title {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.sw-pref-desc {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin: 2px 0 0;
+  line-height: var(--leading-snug);
+}
+
+/* 4. Family List */
+.sw-profile-family-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-2-5);
+}
+
+.sw-profile-family-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2-5);
+  background-color: var(--color-bg-page);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2-5) var(--space-3);
+}
+
+.sw-family-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary-dark);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sw-family-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sw-family-name {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+}
+
+.sw-family-rel {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+}
+
+/* 5. Privacy Card */
+.sw-profile-card--privacy {
+  background-color: var(--color-bg-subtle);
+  border-color: var(--color-border-subtle);
+}
+
+.sw-privacy-statement {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0 0 var(--space-3);
+}
+
+.sw-privacy-items-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.sw-privacy-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  color: var(--color-text-secondary);
+}
+
+/* ==========================================================================
+   SENIOR / ELDERLY MODE SCALING
+   ========================================================================== */
+.sw-proto-shell--elderly .sw-profile-title {
+  font-size: calc(var(--text-2xl) * 1.15);
+}
+
+.sw-proto-shell--elderly .sw-profile-display-name {
+  font-size: var(--text-xl);
+}
+
+.sw-proto-shell--elderly .sw-profile-bio {
+  font-size: var(--text-sm);
+}
+
+.sw-proto-shell--elderly .sw-cond-name {
+  font-size: var(--text-sm);
+}
+
+.sw-proto-shell--elderly .sw-cond-note {
+  font-size: var(--text-xs);
+}
+
+.sw-proto-shell--elderly .sw-pref-title {
+  font-size: var(--text-sm);
+}
+
+.sw-proto-shell--elderly .sw-pref-desc {
+  font-size: var(--text-xs);
+}
