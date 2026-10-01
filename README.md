@@ -171,4 +171,4 @@ Models are evaluated using standard medical diagnostic criteria:
 
 ## License & Attribution
 
-Developed for B.Tech Technology Research in Computer Science / Artificial Intelligence / Medical Image Processing.
+Developed for B.Tech Technology Research in Computer Science / Artificial Intelligence / Medical Image Processing..
